@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import styles from "@/app/page.module.css";
-import Link from "next/link"; // Import Link from Next.js
+import Link from "next/link"; 
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
