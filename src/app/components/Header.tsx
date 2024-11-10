@@ -2,16 +2,22 @@
 
 import Image from "next/image";
 import styles from "@/app/page.module.css";
-import Link from "next/link"; 
+import Link from "next/link";
 import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
+import "aos/dist/aos.css";  // Import AOS styles globally
 
 export default function Header() {
   useEffect(() => {
-    AOS.init({
-      duration: 1200,
-    });
+    // Dynamically import AOS only on the client side
+    if (typeof window !== "undefined") {
+      import("aos").then((AOS) => {
+        AOS.init({
+          duration: 1200,
+        });
+      }).catch((error) => {
+        console.error("Error loading AOS:", error);
+      });
+    }
   }, []);
 
   return (
