@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { FaHtml5, FaCss3Alt, FaReact, FaNodeJs } from "react-icons/fa"; // React Icons
+import { FaHtml5, FaCss3Alt, FaNodeJs } from "react-icons/fa"; // React Icons
 
 import styles from "@/app/page.module.css";
 
