@@ -29,13 +29,7 @@ export default function Projects() {
       link: "https://updated-unique-path-and-link.vercel.app/", // Ensure the link is valid
       tech: [<FaHtml5 />, <FaCss3Alt />, <FaNodeJs />] // Tech stack
     },
-    {
-      title: "Portfolio Website",
-      description: "My personal portfolio built with Next.js.",
-      image: "/portfolio.png",
-      link: "", // Empty link to be handled
-      tech: [<FaReact />, <FaCss3Alt />, <FaHtml5 />] // Tech stack for Next.js
-    },
+    
   ];
 
   return (

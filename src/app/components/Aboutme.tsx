@@ -12,7 +12,7 @@ export default function AboutMe() {
           I enjoy solving problems, learning new technologies, and contributing to innovative projects. With my experience in building various projects, including resume builders and personal portfolios, I am always looking to expand my skill set and create impactful user experiences.
         </p>
         <p>
-          When I'm not coding, I enjoy reading, exploring new tech trends, and collaborating with others on open-source projects.
+          When I am not coding, I enjoy reading, exploring new tech trends, and collaborating with others on open-source projects.
         </p>
       </div>
       </section>
