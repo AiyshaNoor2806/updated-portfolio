@@ -12,28 +12,28 @@ export default function Projects() {
       title: "Static Resume Builder",
       description: "A static resume builder using HTML, CSS, and TypeScript.",
       image: "/static-resume.png",
-      link: "https://updated-static-resume-builder.vercel.app/",
+      link: "https://updated-static-resume-builder.vercel.app/", // Valid link
       tech: [<FaHtml5 />, <FaCss3Alt />, <FaNodeJs />] // Tech stack
     },
     {
       title: "Dynamic Resume Builder",
       description: "A dynamic resume builder using HTML, CSS, and TypeScript.",
       image: "/dynamic-resume-builder.PNG",
-      link: "https://updated-dynamic-resume-builder.vercel.app/",
+      link: "https://updated-dynamic-resume-builder.vercel.app/", // Valid link
       tech: [<FaHtml5 />, <FaCss3Alt />, <FaNodeJs />] // Tech stack
     },
     {
       title: "Editable Resume with Unique Path",
       description: "Editable resume with a unique path and shareable link.",
       image: "/resume-builder-with-unique-path.png",
-      link:"updated-unique-path-and-link.vercel.app/",
+      link: "https://updated-unique-path-and-link.vercel.app/", // Ensure the link is valid
       tech: [<FaHtml5 />, <FaCss3Alt />, <FaNodeJs />] // Tech stack
     },
     {
       title: "Portfolio Website",
       description: "My personal portfolio built with Next.js.",
       image: "/portfolio.png",
-      link: "",
+      link: "", // Empty link to be handled
       tech: [<FaReact />, <FaCss3Alt />, <FaHtml5 />] // Tech stack for Next.js
     },
   ];
@@ -60,9 +60,14 @@ export default function Projects() {
                 </span>
               ))}
             </div>
-            <Link href={project.link} className={styles.projectLink}>
-              View Project
-            </Link>
+            {/* Only render Link if there is a valid project link */}
+            {project.link ? (
+              <Link href={project.link} className={styles.projectLink}>
+                View Project
+              </Link>
+            ) : (
+              <span className={styles.projectLink}>Coming Soon</span> // Fallback if no link
+            )}
           </div>
         ))}
       </div>
