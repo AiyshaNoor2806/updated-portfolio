@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import styles from "@/app/page.module.css";
 
@@ -9,24 +11,20 @@ export default function Resume() {
           <h2>Resume</h2>
           <p>Here is the image of my detailed resume:</p>
           <div className={styles.resumeImageContainer}>
-            <div data-aos="fade-down-right">
-              <Image
-                src={"/resume-png.png"}
-                alt="My Resume"
-                width={600} // Fixed size
-                height={900} // Fixed size
-                className={styles.resumeImage}
-              />
-            </div>
-            <div data-aos="fade-down-right">
-              <Image
-                src={"/resume2-png.png"}
-                alt="My Resume"
-                width={600} // Fixed size
-                height={900} // Fixed size
-                className={styles.resumeImage}
-              />
-            </div>
+            <Image
+              src={"/resume-png.png"}
+              alt="My Resume"
+              width={800}
+              height={1200}
+              className={styles.resumeImage}
+            />
+            <Image
+              src={"/resume2-png.png"}
+              alt="My Resume"
+              width={800}
+              height={1200}
+              className={styles.resumeImage}
+            />
           </div>
         </div>
       </div>
