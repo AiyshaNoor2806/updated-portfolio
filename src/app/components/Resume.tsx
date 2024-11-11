@@ -12,14 +12,14 @@ export default function Resume() {
           <p>Here is the image of my detailed resume:</p>
           <div className={styles.resumeImageContainer}>
             <Image
-              src={"/resume-png.png"}
+              src={"/resume-png.PNG"}
               alt="My Resume"
               width={800}
               height={1200}
               className={styles.resumeImage}
             />
             <Image
-              src={"/resume2-png.png"}
+              src={"/resume2-png.PNG"}
               alt="My Resume"
               width={800}
               height={1200}
