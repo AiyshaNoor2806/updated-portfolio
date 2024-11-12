@@ -598,3 +598,59 @@
     font-size: 1rem;
   }
 }
+
+
+/* Header Section Mobile Responsive */
+@media (max-width: 768px) {
+  /* Container for Header */
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Profile Image in Header */
+  .imagecontainer {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 20px; /* Add some space between image and text */
+  }
+
+  /* Text in Header */
+  .introduction {
+    text-align: center;
+    max-width: 90%;
+  }
+
+  .introduction h1 {
+    font-size: 2rem; /* Smaller font size for mobile */
+  }
+
+  .introduction h2 {
+    font-size: 1.3rem;
+  }
+
+  .introduction p {
+    font-size: 0.95rem;
+  }
+
+  /* Navbar in Header */
+  .navbar {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .navbar a {
+    font-size: 1rem;
+  }
+
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+}
